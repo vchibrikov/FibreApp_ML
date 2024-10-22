@@ -3,12 +3,10 @@ from PIL import Image
 import imagehash
 
 def get_image_hash(image_path):
-    """Compute the hash of an image."""
     with Image.open(image_path) as img:
         return imagehash.average_hash(img)
 
 def find_and_delete_duplicates(directory):
-    """Find and delete duplicate images in the specified directory."""
     seen_hashes = set()
     for filename in os.listdir(directory):
         file_path = os.path.join(directory, filename)
@@ -24,5 +22,5 @@ def find_and_delete_duplicates(directory):
                 print(f"Error processing {file_path}: {e}")
 
 if __name__ == "__main__":
-    directory_path = "/Users/vadymchibrikov/Desktop/FIBREAPP_IMAGES/ENG/TRAIN_BATCH/Strawberry"
+    directory_path = "/Users/path/to/batch"
     find_and_delete_duplicates(directory_path)
