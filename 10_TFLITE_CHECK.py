@@ -66,5 +66,4 @@ print("Class names:", class_names)
 
 image_folder = '/Users/path/to/model/check/images'
 
-# Rename images based on model predictions
 rename_images(image_folder, class_names, input_size)
