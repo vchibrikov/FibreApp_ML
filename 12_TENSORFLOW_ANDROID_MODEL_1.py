@@ -13,7 +13,6 @@ batch_size =
 class_number = 
 epochs_number = 
 
-# Define paths
 train_dir = '/Users/path/to/train/data'
 test_dir = '/Users/path/to/test/data'
 valid_dir = '/Users/path/to/validation/data'
