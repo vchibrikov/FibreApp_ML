@@ -4,6 +4,7 @@ import numpy as np
 
 img_height, img_width = 
 batch_size = 
+epochs = 
 
 train_ds = tf.keras.utils.image_dataset_from_directory(
     "/Users/path/to/train/data",
@@ -54,7 +55,7 @@ model.compile(
 model.fit(
     train_ds,
     validation_data=val_ds,
-    epochs =
+    epochs = epochs
 )
 
 model.evaluate(test_ds)
